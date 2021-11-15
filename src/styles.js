@@ -155,6 +155,7 @@ export default function getStyles(stepStyles = {}) {
       ...overlay,
       backgroundColor: options.overlayColor,
       mixBlendMode: 'hard-light',
+      willChange: 'opacity',
     },
     overlayLegacy: {
       ...overlay,
