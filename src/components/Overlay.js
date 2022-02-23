@@ -192,7 +192,10 @@ export default class JoyrideOverlay extends React.Component {
       onClickSpotlight,
     } = this.props;
 
-    if (disableOverlay || lifecycle !== LIFECYCLE.TOOLTIP) {
+    // if (disableOverlay || lifecycle !== LIFECYCLE.TOOLTIP) {
+    //   return null;
+    // }
+    if (disableOverlay) {
       return null;
     }
 
